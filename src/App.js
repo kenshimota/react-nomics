@@ -1,16 +1,16 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Home from "./views/Home";
-import Product from "./views/productos";
-import SearchAppBar from "./components/SearchAppBar";
+import Products from "./views/Products";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div className = 'App'>
       <BrowserRouter>
-      <SearchAppBar/>
+        <NavBar />
         <Routes>
           <Route path = '/' element = { <Home />} />
-          <Route path = "/product" element = { <Product/> } />
+          <Route path = "/product" element = { <Products /> } />
         </Routes>
       </BrowserRouter>
     </div>
