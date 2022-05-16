@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Product(){
+function Products(){
     return(
         <div>
             <Link to = '/'>
@@ -13,4 +13,4 @@ function Product(){
     );
 }
 
-export default Product; 
+export default Products; 
